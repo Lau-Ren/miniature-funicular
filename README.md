@@ -19,15 +19,15 @@ The first argument is the app.js file in the root dir, the second argument is th
 
 - [ ] Create a file called ``` webpack.config.js``` with the following code:
 
-  '''
-  |  module.exports = {
-  |    entry: "./app.js",
-  |    output: {
-  |      filename: "bundle.js"
-  |    },
-  |    watch: true
-  |  }
-  '''
+  ```
+    module.exports = {
+      entry: "./app.js",
+      output: {
+        filename: "bundle.js"
+      },
+      watch: true
+    }
+  ```
 
 
   - **entry** is the name of the top level file or files (can be an array of files] to be included in the build.
@@ -82,7 +82,7 @@ Babel is a loader, and jshint is a preloader
 
 - [ ] add babel loader and jshint preloader to the webpack config file:
 
-  '''
+  ```
     module.exports = {
       entry: "./app.js",
       output: {
@@ -113,7 +113,7 @@ Babel is a loader, and jshint is a preloader
        },
       watch: true
     }
-  '''
+  ```
 
   - **test**. States which kind of files may be run through the loader
   - **exclude**. States which files the loader should ignore
