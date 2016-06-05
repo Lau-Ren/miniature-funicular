@@ -1,7 +1,8 @@
 module.exports = {
-  entry: "./app.js",
+  entry: ["./global.js", "./app.js"],
   output: {
     filename: "bundle.js"
-  }
+  },
+  watch: true
 
 }
