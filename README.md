@@ -88,7 +88,7 @@ Babel is a loader, and jshint is a preloader
       output: {
         filename: "bundle.js"
       },
-      **module: {
+      module: {
         preLoaders: [
           {
             test: /\.js$/,
@@ -107,7 +107,7 @@ Babel is a loader, and jshint is a preloader
             }
           }
         ]
-       },**
+       },
        resolve: {
          extensions: ['', '.js', '.es6']
        },
@@ -118,9 +118,9 @@ Babel is a loader, and jshint is a preloader
   - **test**. States which kind of files may be run through the loader
   - **exclude**. States which files the loader should ignore
   - **loader**. The name of the loader being used
-  - **query**. Options to be passed to the loader 
+  - **query**. Options to be passed to the loader
     - **cacheDirectory**. When true, the current dir will be used to cache the results of the loader
-    - **presets**. Allows the use of the react and es2015 presets 
+    - **presets**. Allows the use of the react and es2015 presets
   - **resolve**. Specifies the filetypes that can be processed if  the files does not have a specific file extension ie. ```require('./fileName')```
 
 
@@ -141,13 +141,13 @@ Babel is a loader, and jshint is a preloader
       var stripLoader = {
         test: [/\.js$/, /\.es6$/],
         exclude: /node_modules/,
-        **loader: WebpackStripLoader.loader('console.log')**
+        loader: WebpackStripLoader.loader('console.log')
       }
       devConfig.module.loaders.push(stripLoader);
       module.exports = devConfig;
     ```
 
-    - The arguments on the bolded line above (begining "loader:...") are the functions strip-loader will remove. Here it will remove all console.logs, but the loader can take more than one argument.
+    - The arguments on the line above (begining "loader:...") are the functions strip-loader will remove. Here it will remove all console.logs, but the loader can take more than one argument.
 
   - [ ] Run ```webpack --config webpack-production.config.js -p```. The config flag allows a config file to be specified and -p minifies the code.
 
@@ -157,8 +157,8 @@ Babel is a loader, and jshint is a preloader
 
 - [ ] Run the cmd ```npm install react react-dom --save```
 
-- [ ] Create a new component file with the following code: 
-  
+- [ ] Create a new component file with the following code:
+
   ```
   import React from "react";
 
