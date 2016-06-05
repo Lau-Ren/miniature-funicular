@@ -1,4 +1,4 @@
-'use strict';
+/*jshint esversion: 6 */
 
 require('./logger');
 console.log('app loaded');

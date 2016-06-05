@@ -127,7 +127,8 @@ Babel is a loader, and jshint is a preloader
 - [ ] Create a new es6 file and require it in app.js. In the new file, write a es6 function that will console.log something.
 
 - [ ] Relaunch the webpack dev server and check that the console.log was successful
-  There should be a warning message in the terminal, this just means that JSHint it runnng.
+  There should be a warning message in the terminal, this just means that JSHint it runnng. To get rid of es6 related errors include ```/*jshint esversion: 6 */``` at the top of js files
+
 
 - [ ] Create a start script. In the package.json add ```"start": "webpack-dev-server"``` to ```"scripts"```
   This means that the cmd ```npm start``` can be used now instead of ```webpack-dev-server```
