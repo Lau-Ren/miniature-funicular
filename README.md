@@ -20,13 +20,13 @@ The first argument is the app.js file in the root dir, the second argument is th
 - [ ] Create a file called ``` webpack.config.js``` with the following code:
 
   '''
-    module.exports = {
-      entry: "./app.js",
-      output: {
-        filename: "bundle.js"
-      },
-      watch: true
-    }
+  |  module.exports = {
+  |    entry: "./app.js",
+  |    output: {
+  |      filename: "bundle.js"
+  |    },
+  |    watch: true
+  |  }
   '''
 
 
