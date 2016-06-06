@@ -7,8 +7,9 @@ A guide for
 
 ### To get started:
 
-- [ ] ``` npm install webpack -g```
+- [ ] ``` npm init -y```
 
+- [ ] ``` npm install webpack -g```
 
 - [ ] Create an index.html and an app.js file in the root dir
 
