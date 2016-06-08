@@ -14,7 +14,7 @@ A guide for
 - [ ] Create an index.html and an app.js file in the root dir
 
 - [ ] Run ```webpack ./app.js bundle.js```
-The first argument is the app.js file in the root dir, the second argument is the name of the file  webpack should create.
+The first argument is the app.js file in the root dir, the second argument is the name of the file  webpack should create. If all was successful there should be a new bundle file in the root.
 
 ### Define webpack config file
 
